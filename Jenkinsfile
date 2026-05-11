@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/vihaanbhat/MySeleniumApp.git'
+                git branch: 'main', url: 'https://github.com/SaiHarithK/selenium-login01.git'
             }
         }
 
@@ -33,7 +33,7 @@ stage('Check Target Folder') {
        
        stage('Run Application') {
     steps {
-        sh 'java -jar target/MyMavenSeleniumnApp001-1.0-SNAPSHOT.jar'
+        sh 'java -jar target/MyMavenSeleniumApp01-1.0-SNAPSHOT.jar'
     }
 }
         
